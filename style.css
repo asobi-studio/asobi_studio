@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+/* 全共通部分 */
+html{
+  font-size: 100%;
+}
+body{
+  font-family: "Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*  Header */
+ /* ロゴ(小)とナビゲーションメニューを設定  */
+.logo{    /* ロゴ画像サイズ調整*/
+  width: 140px;
+  margin-top: 14px;
+}
+
+.main-nav{   /* ナビゲーションメニュー　横並び　色*/
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 60px;   /* メニュー表示の高さ*/
+  list-style: none;
+}
+.main-nav li {
+  margin-right: 36px;
+}
+.main-nav a{ /* 普通の色（黒）*/
+  color: #432;
+  font-family: 'Quantico', sans-serif;
+}
+.main-nav a:hover{  /* カーソルを合わせた時の色（水色）*/
+  color: #0bd;
+}
+.page-header{  /* ロゴとメニューを横並び*/
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper{　               /* ロゴとメニューの最大表示幅の設定*/
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+/*
+             共通部分ここまで
+*/
+
+/*
+           HOME                      */
+.home2{
+  margin-top: 60px;
+}
+h2.home3{
+  font-family: 'Quantico', sans-serif;
+  font-size: 27px;
+  border-bottom: 3px double black;
+  display: inline-block;  /*  下線を字数に合わせる  */
+  margin-left: 60px;
+  margin-top: 30px;
+}
+.com{
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 27px;
+  font-weight: bolder;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+/*         homeここまで                 */
+
+/*             概要.hyml
+
+*/
+#news{      /* ヘッダー挿入  */
+  background-image: url(../images/ヘッダー細い.gif);
+  min-height: 100vh;
+}
+#news .page-title{ /* h2の調整 */
+  margin-top: 22px;
+  text-align: left;
+  font-size: 35px;
+  border-bottom: 3px solid #fff;
+}
+#news p{
+  margin-top: 30px;
+  text-align: left;
+  font-size: 27px;
+}
+
+/* メイン部分 */
+
+article{
+  width: 74%;
+}
+article img{
+  margin-bottom: 20px;
+}
+article p {   /* まだ、後からテキストを入れる */
+  margin-bottom: 1rem;
+}
+/* サイドバー */
+aside{
+  width: 22%;
+}
+
+
+
+/*            概要.htmlここまで
+ */
+
+/*
+              予定.html
+*/
+.post-date-yotei{   /* 未の予定          日付のアイコン（オレンジ）　*/
+  background: #ec541c;  /*背景色*/
+  border-radius: 50%;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  font-size: 1.625rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+.post-date-yotei span{
+  font-size: 1rem;
+  border-top: 1px rgba(255,255,255,5) solid;
+  padding-top: 6px;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+img.kao{
+  width: 450px;
+  height: 299.4px;
+}
+img.photo{
+  width: 500px;
+  height: 500px;
+}
+.coming{
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 27px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+/*
+              予定.html  ここまで
+*/
+
+/*
+               コンタクト.html
+*/
+.button{
+  font-size: 1.375rem;
+  background: #0bd;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.button:hover{
+  background: #0090aa;
+}
+/*           フォーム            */
+form div{
+  margin-bottom: 14px;
+}
+label{
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+  background: rgba(255,255,255,.5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="email"]{
+  width: 100%;
+  max-width: 240px;
+}
+textarea{
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"]{
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+#contact {     /*フォームの背景  順番にメイン、中玉、小玉 */
+  position: relative;
+  margin: 2em 0 2em 40px;
+  padding: 15px;
+  background: #ffdbc6;
+  border-radius: 30px;
+}
+
+#contact:before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  width: 13px;
+  height: 12px;
+  bottom: 0;
+  background: #ffdbc6;
+  border-radius: 50%;
+}
+
+#contact:after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  width: 20px;
+  height: 18px;
+  bottom: 3px;
+  background: #ffdbc6;
+  border-radius: 50%;
+}
+#contact .wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+#contact{
+  background: #edb491;
+  padding: 20px;
+}
+*/
+/*
+               コンタクト.html  ここまで
+*/
+
+
+
+
+
+/*
+　　　　　　左の部分
+*/
+.news-contents{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.post-info{
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+}
+.post-date{
+  background: #0bd;  /*背景色*/
+  border-radius: 50%;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  font-size: 1.625rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+.post-date span{
+  font-size: 1rem;
+  border-top: 1px rgba(255,255,255,5) solid;
+  padding-top: 6px;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+.post-title{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.post-title,
+.post-cat{
+  margin-left: 120px;
+}
+
+/*
+　　　　左の部分　　　　　ここまで
+*/
+
+
+
+/*右のメニュー*/
+.sub-title{
+  font-size: 1.375;
+  padding: 0 8px 8px;
+  border-bottom: 2px #0bd solid;
+  font-weight: normal;
+}
+aside p{
+  padding: 12px 10px;
+}
+.sub-menu{
+  margin-bottom: 60px;
+  list-style: none;
+}
+.sub-menu li{
+  border-bottom: 1px #ddd solid;
+}
+.sub-menu a{
+  color: #432;
+  padding: 10px;
+  display: block;
+}
+.sub-menu a:hover{
+  color: #0bd;
+}
+/*右のメニュー　　ここまで*/
+
+
+
+
+
+
+
+/*                 フッター                                */
+footer{
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+}
+footer p{
+  color: #fff;
+  font-size: 0.875rem;
+}
+/*
+             フッターここまで
+*/
+
+/*   レスポンシブcss記述    */
